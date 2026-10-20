@@ -1,4 +1,4 @@
-# Website Architecture – Personal Expense Tracker 
+# Website Architecture – Personal Expenses Tracker 
 
 ### 1. How many pages and what are they?
 The website consists of following pages:
