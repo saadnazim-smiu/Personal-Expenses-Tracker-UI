@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="brand-header">
+        <h1 class="brand">Personal Expense Tracker</h1>
+    </header>
+
+    <header class="top-nav">
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="income.html">Income</a>
+            <a href="add-expense.html">Add Expense</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="categories.html">Categories</a>
+            <a href="monthly-report.html">Monthly Report</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+        
+    </header>
+
+    <main class="container">
+        <div class="page-shell">
+
+            <div class="balance-box">
+                <span>Remaining Balance</span>
+                <strong>Rs. 35,000.00</strong>
+            </div>
+
+            <section class="panel">
+                <h2>Your Expenses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-10-02</td>
+                            <td>Food</td>
+                            <td>Monthly groceries</td>
+                            <td>Rs. 5,000</td>
+                            <td class="table-actions">
+                                <a href="add-expense.html" class="button small-btn">Edit</a>
+                                <button type="button" class="small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2026-10-04</td>
+                            <td>Transport</td>
+                            <td>Fuel and travel</td>
+                            <td>Rs. 3,000</td>
+                            <td class="table-actions">
+                                <a href="add-expense.html" class="button small-btn">Edit</a>
+                                <button type="button" class="small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

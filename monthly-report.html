@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="brand-header">
+        <h1 class="brand">Personal Expense Tracker</h1>
+    </header>
+
+    <header class="top-nav">
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="income.html">Income</a>
+            <a href="add-expense.html">Add Expense</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="categories.html">Categories</a>
+            <a href="monthly-report.html">Monthly Report</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-shell">
+
+            <p class="subtitle" style="margin: 18px 0 22px; color: var(--muted);">Review your income and expenses for a selected month.</p>
+
+            <section class="panel">
+                <label for="month">Select Month</label>
+                <input type="month" id="month" value="2026-10">
+                <button type="submit">Generate Report</button>
+            </section>
+
+            <section class="stats-grid" style="margin-top: 22px;">
+                <div class="stat-card income-card">
+                    <span>Monthly Income</span>
+                    <strong>Rs. 50,000</strong>
+                </div>
+
+                <div class="stat-card expense-card">
+                    <span>Monthly Expenses</span>
+                    <strong>Rs. 15,000</strong>
+                </div>
+
+                <div class="stat-card balance-card">
+                    <span>Monthly Savings</span>
+                    <strong>Rs. 35,000</strong>
+                </div>
+            </section>
+
+            <section class="panel">
+                <p class="eyebrow">Breakdown</p>
+                <h2>Expenses by Category</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Total Amount</th>
+                            <th>Percentage of Expenses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Food</td>
+                            <td>Rs. 5,000</td>
+                            <td>33.33%</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>Rs. 3,000</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Bills</td>
+                            <td>Rs. 7,000</td>
+                            <td>46.67%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

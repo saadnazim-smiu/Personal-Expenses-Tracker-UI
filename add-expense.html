@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense | Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="brand-header">
+        <h1 class="brand">Personal Expense Tracker</h1>
+    </header>
+
+    <header class="top-nav">
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="income.html">Income</a>
+            <a href="add-expense.html">Add Expense</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="categories.html">Categories</a>
+            <a href="monthly-report.html">Monthly Report</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-shell">
+
+            <div class="balance-box">
+                <span>Remaining Balance</span>
+                <strong>Rs. 35,000.00</strong>
+            </div>
+
+            <section class="panel">
+                <p class="eyebrow">Expenses</p>
+                <h2>New Expense Entry</h2>
+
+                <form>
+                    <label for="category">Category</label>
+                    <select id="category" required>
+                        <option value="">Select Category</option>
+                        <option>Food</option>
+                        <option>Transport</option>
+                        <option>Bills</option>
+                        <option>Shopping</option>
+                        <option>Education</option>
+                        <option>Health</option>
+                        <option>Entertainment</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number" min="0" step="0.01" placeholder="0.00" required>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="4" placeholder="Describe your expense..."></textarea>
+
+                    <label for="expense-date">Date</label>
+                    <input id="expense-date" type="date" required>
+
+                    <button type="submit">Add Expense</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
